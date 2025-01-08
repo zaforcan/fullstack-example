@@ -8,7 +8,9 @@ function App() {
   const [count, setCount] = useState(0);
 
   const handleButtonClick = async () => {
-    setCount((prevCount) => prevCount + 3);
+    setCount((prevCount) => prevCount + 1);
+
+
 
     // İstek Gönderme
     try {
@@ -21,26 +23,16 @@ function App() {
 
   return (
     <>
-      <h1>Merhaba Dünya!</h1>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <h1>Butona Tıkla!</h1>
+      <div>        
       </div>
-      <h1>Vite + React</h1>
       <div className="card">
         <button onClick={handleButtonClick}>
-          count is {count}
+          Tıklanma sayısı: {count}
         </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
       </div>
       <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
+        Butona tıkla ve konsolu kontrol et!
       </p>
     </>
   );

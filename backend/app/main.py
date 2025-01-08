@@ -1,5 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+import random
+import time
 
 app = FastAPI()
 
@@ -12,14 +14,19 @@ app.add_middleware(
     allow_headers=["*"],  # Tüm başlıklara izin veriliyor
 )
 
+count = 0  # Butona kaç kez tıklandığını tutacak olan değişken
+
 # Root endpoint
 @app.get("/")
 def read_root():
     return {"message": "Welcome to the FastAPI backend!"}
 
-# Example endpoint
 @app.get("/hello")
 def read_item():
-    return {"message": f"Hello apisi çok iyi çalıştı"}
+    global count  # Global değişkeni kullanmak için belirtiyoruz
+    count += 1    # Her istek yapıldığında count arttırılıyor
+    return {"message": f"Butona {count} kez tıklandı!"}
+
+
 
 
