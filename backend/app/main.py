@@ -20,6 +20,6 @@ def read_root():
 # Example endpoint
 @app.get("/hello")
 def read_item():
-    return {"message": f"Hello apisi çalıştı"}
+    return {"message": f"Hello apisi çok iyi çalıştı"}
 
 

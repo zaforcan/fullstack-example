@@ -8,7 +8,7 @@ function App() {
   const [count, setCount] = useState(0);
 
   const handleButtonClick = async () => {
-    setCount((prevCount) => prevCount + 1);
+    setCount((prevCount) => prevCount + 3);
 
     // İstek Gönderme
     try {

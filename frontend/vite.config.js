@@ -7,6 +7,9 @@ export default defineConfig({
     host: true,
     port: 5173,
     strictPort: true,
+    watch: {
+      usePolling: true
+    },
     proxy: {
       '/api': {
         target: 'http://fastapi_backend:8000', // FastAPI'nin adresini burada belirtin
