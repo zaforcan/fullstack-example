@@ -1,12 +1,14 @@
-Bu proje, FastAPI ve Vite (React, JavaScript) kullanarak basit bir web uygulaması oluşturur.
+# Button Click App
 
-### Önkoşullar
+This project creates a simple web application using FastAPI and Vite (React, JavaScript).
 
-Projeyi yerel olarak çalıştırmak için Docker ve Docker Compose'un yüklü olması gerekmektedir.
+## Prerequisites
 
-### Kurulum
+To run the project locally, Docker and Docker Compose must be installed.
 
-Proje dizininde, uygulamayı Docker kullanarak başlatmak için aşağıdaki komutu çalıştırın:
+## Installation
+
+In the project directory, run the following command to start the application using Docker:
 
 ```bash
 docker compose up -d
